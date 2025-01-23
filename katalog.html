@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru"> <!--Подключение русского языка-->
+
+<head>
+  <!--Подключение прочих файлов-->
+  <meta charset="UTF-8">
+  <title>Katalog</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <a class="logo" href="katalog.html">
+      <img class="logo__img" src="images/logo.jpg" alt="logo">
+    </a>
+    <a class="logo-icon" href="register.html" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <img class="logo-icon__img" src="images/logo-icon.svg" alt="logo-icon">
+    </a>
+    <!-- Черновик для добавление корзины
+      <div class="cart">
+        <i class="fa fa-shopping-basket fa-2x"></i>
+        <i class="fa fa-caret-down"></i><br>
+        <div class="total-text">
+          <p>Items</p>
+          <p id="items-basket"></p>
+        </div>
+      </div>
+
+      <div id="cart-items">
+        <ol id="list-item">
+        </ol>
+        <div class="total-text">
+            <p>Total: </p>
+            <p id="total-price"></p>
+        </div>
+      </div> -->
+  </div>
+
+  <div class="items-container">
+
+    <!-- Item 1 (Старый) -->
+    <div class="item">
+      <img src="https://carcam.ru/upload/iblock/05f/himo_c20_electric_power_bicycle_white_2.png">
+      <div class="overflow">
+        <i class="fa fa-cart-plus fa-5x" id="basket"></i>
+      </div>
+      <div class="item-detail">
+        <h4>XIAOMI HIMO C20</h4>
+        <div class="prices">
+          <p class="price">63990</p>
+          <p>₽</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 2 
+    <div class="item">
+      <a href="C:\Sozdanie sayta\new\Xiaomi Himo\start\himo c26.html">
+        <img src="https://carcam.ru/upload/iblock/982/2.jpg">
+      </a>
+      <div class="overflow">
+        <i class="fa fa-cart-plus fa-5x"></i>
+      </div>
+      <div class="item-detail">
+        <h4>XIAOMI HIMO C26</h4>
+        <div class="prices">
+          <p class="price">106990</p>
+          <p>₽</p>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="item">
+      <a href="himo c26.html" class="item-link">
+        <div class="image-wrapper">
+          <img src="https://carcam.ru/upload/iblock/982/2.jpg" alt="XIAOMI HIMO C26">
+        </div>
+        <div class="overflow">
+          <i class="fa fa-cart-plus fa-5x"></i>
+        </div>
+        <div class="item-detail">
+          <h4>XIAOMI HIMO C26</h4>
+          <div class="prices">
+            <p class="price">106990</p>
+            <p>₽</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="item">
+      <img src="https://www.kvadroavto.ru/upload/iblock/d00/d004bf195395fadc137ce6f3a6e63f46.png">
+      <div class="overflow">
+        <i class="fa fa-cart-plus fa-5x"></i>
+      </div>
+      <div class="item-detail">
+        <h4>XIAOMI C30S</h4>
+        <div class="prices">
+          <p class="price">142990</p>
+          <p>₽</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="item">
+      <img src="C:\Users\tarpovnik\Desktop\Чик чик ножницами\xiaomi_vel.JPG">
+      <div class="overflow">
+        <i class="fa fa-cart-plus fa-5x"></i>
+      </div>
+      <div class="item-detail">
+        <h4>XIAOMI HIMO M40</h4>
+        <div class="prices">
+          <p class="price">179990</p>
+          <p>₽</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="item">
+      <img
+        src="https://formand.ru/image/cache/data/electric-bicycles/xiaomi-himo-v1/elektrovelosiped-xiaomi-himo-v1-foto-01-1000x750.jpg">
+      <div class="overflow">
+        <i class="fa fa-cart-plus fa-5x"></i>
+      </div>
+      <div class="item-detail">
+        <h4>XIAOMI HIMO V1</h4>
+        <div class="prices">
+          <p class="price">46990</p>
+          <p>₽</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 6 -->
+    <div class="item">
+      <img src="https://girosmart.ru/image/catalog/sw_photos/1597/elektrosamokat-kka-l2-4.jpg">
+      <div class="overflow">
+        <i class="fa fa-cart-plus fa-5x"></i>
+      </div>
+      <div class="item-detail">
+        <h4>XIAOMI M365 PRO</h4>
+        <div class="prices">
+          <p class="price">26990</p>
+          <p>₽</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!--Карта -->
+  <div class="map">
+    <h1>Найти нас вы сможете по адресу: Санкт-Петербург, ул.Пушкинская 16 корп. 2</h1>
+    <!--Он не хочет видеть одну или две буквы в слове в начале -->
+    <script type="text/javascript" charset="utf-8" async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0bd94ede888b029742eb84708a89dea2210a8bd7c034afd19d8559322593dc8e&amp;width=566&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+  </div>
+
+  <!--Контакты -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a class="footer__link" href="C:\Sozdanie sayta\new\Xiaomi Himo\start\politi_conf.html">Политика
+          конфиденциальности</a>
+        <div class="footer__social">
+          <a class="footer__social-link" href="https://vk.com/tarpovnik">
+            <img class="footer__social-img" src="images/vkontakte.svg" alt="">
+          </a>
+          <a class="footer__social-link" href="https://t.me/tarpovnik">
+            <img class="footer__social-img" src="images/telegram.svg" alt="">
+          </a>
+        </div>
+        <div class="footer__contacts">
+          <a class="footer__contacts-link" href="tel:+79183901366">
+            <img class="footer__contacts-img" src="images/phone.svg" alt="">
+            <span>+7 918 390 13 66</span>
+          </a>
+          <a class="footer__contacts-link" href="mailto:tarpovnik@gmail.com">
+            <img class="footer__contacts-img" src="images/mail.svg" alt="">
+            <span>tarpovnik@gmail.com</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
